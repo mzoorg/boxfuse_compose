@@ -21,8 +21,8 @@ services:
     depends_on:
       - assembly
     environment:
-      CATALINA_HOME: /usr/share/tomcat9
-      CATALINA_BASE: /var/lib/tomcat9
+      - CATALINA_HOME=/usr/share/tomcat9
+      - CATALINA_BASE=/var/lib/tomcat9
 
 volumes:
   datavolume:
